@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Add a comment</title>
+</head>
+<body>
+    <div class="container">
+        <h1>«Оставьте ваш комментарий»</h1>
+        <div>Показывать ваше имя? <input type="checkbox" id="showName" checked></div>
+        <div>
+            <label for="userName">Ваше имя:</label><br>
+            <input type="text" id="userName" placeholder="Bведите имя" required>
+        </div>
+        <div id="avatarForm">
+        Ссылка на аватар:<br>
+            <input type="text" id="avatarInput" name="avatar">
+            <button id="addAvatar" class="disabledButton" disabled>Отправить</button>
+        </div>
+            <h3>Ваш аватар:</h3>
+            <div class="avatarContainer">
+                <img src="assets/empty_ava.jpg" id="avatarImage" alt="ваш аватар">
+            </div>
+        <div>
+            <textarea name="" id="comment" cols="80" rows="10"></textarea>
+        </div>
+        <button class="add disabledButton" disabled>Добавить комментарий</button>
+        <div class="comment">
+            <div id="commentAvatar">
+                <img src="" id="avatarImageComment" alt="img">
+            </div>
+            <div id="date"></div>
+            <div id="commentName"></div>
+            <div id="commentText"></div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
